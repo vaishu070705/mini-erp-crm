@@ -78,6 +78,23 @@ function Login() {
             <button className="login-button" onClick={handleLogin}>
               Login
             </button>
+            <div className="demo-card">
+              <h3>🚀 Demo Login</h3>
+
+              <div className="demo-row">
+                <strong>Email:</strong>
+                <span>admin@example.com</span>
+              </div>
+
+              <div className="demo-row">
+                <strong>Password:</strong>
+                <span>Password123</span>
+              </div>
+
+              <p className="demo-note">
+                Use these credentials to explore the Mini ERP CRM application.
+              </p>
+            </div>
           </div>
         </section>
       </main>
