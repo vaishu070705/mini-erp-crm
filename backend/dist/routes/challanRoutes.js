@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const challanController_1 = require("../controllers/challanController");
+const router = (0, express_1.Router)();
+router.get("/", challanController_1.getAllChallans);
+router.get("/:id", challanController_1.getChallanById);
+router.post("/", challanController_1.createChallan);
+router.put("/:id", challanController_1.updateChallan);
+router.delete("/:id", challanController_1.deleteChallan);
+router.put("/:id/confirm", challanController_1.confirmChallan);
+router.put("/:id/cancel", challanController_1.cancelChallan);
+router.post("/:id/items", challanController_1.addChallanItem);
+router.get("/:id/items", challanController_1.getChallanItems);
+router.delete("/:id/items/:itemId", challanController_1.deleteChallanItem);
+exports.default = router;
