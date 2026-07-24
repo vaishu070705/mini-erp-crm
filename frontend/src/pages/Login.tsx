@@ -88,7 +88,7 @@ function Login() {
 
               <div className="demo-row">
                 <strong>Password:</strong>
-                <span>Password123</span>
+                <span>password123</span>
               </div>
 
               <p className="demo-note">
